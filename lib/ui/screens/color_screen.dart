@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_streams/model/color_model.dart';
-import 'package:flutter_streams/model/color_provider.dart';
 import 'package:flutter_streams/ui/widgets/color_box.dart';
 import 'package:flutter_streams/ui/widgets/color_change_button.dart';
+import 'package:flutter_streams/utils/generic_bloc.dart';
 
 class ColorScreen extends StatelessWidget {
   @override
@@ -15,7 +15,7 @@ class ColorScreen extends StatelessWidget {
       body: Container(
         child: Padding(
           padding: EdgeInsets.only(top: 100.0),
-          child: ColorProvider(
+          child: BlocProvider(
             bloc: ColorModel(),
             child: Column(
               children: <Widget>[

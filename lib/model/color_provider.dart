@@ -8,7 +8,7 @@ class ColorProvider extends InheritedWidget {
   ColorProvider({this.bloc, this.child}) : super(child: child);
 
   static ColorProvider of(BuildContext context) =>
-      (context.dependOnInheritedWidgetOfExactType<ColorProvider>());
+      context.dependOnInheritedWidgetOfExactType<ColorProvider>();
   @override
   bool updateShouldNotify(ColorProvider oldWidget) {
     return bloc != oldWidget.bloc;
