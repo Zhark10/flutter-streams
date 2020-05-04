@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_streams/model/color_model.dart';
+import 'package:flutter_streams/model/color/color_model.dart';
 import 'package:flutter_streams/ui/widgets/color_box.dart';
 import 'package:flutter_streams/ui/widgets/color_change_button.dart';
 import 'package:flutter_streams/utils/generic_bloc.dart';
