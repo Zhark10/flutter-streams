@@ -26,16 +26,15 @@ class _ColorBoxState extends State<ColorBox> {
           child: StreamBuilder(
               initialData: Colors.red,
               stream: colorModel.colorStream,
-              builder: (BuildContext context, snapShot) => AnimatedContainer(
-                  child: Center(
-                    child: Container(
+              builder: (BuildContext context, snapShot) =>
+                  Center(
+                    child: AnimatedContainer(
                       height: selected ? 200.0 : 100.0,
                       width: selected ? 100.0 : 200.0,
                       color: snapShot.data,
+                  duration: Duration(seconds: 1))),
                     ),
                   ),
-                  duration: Duration(seconds: 1))),
-        ),
       ],
     );
   }
